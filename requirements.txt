@@ -1,0 +1,8 @@
+requests>=2.31.0
+rich>=13.7.0
+pygments>=2.17.0
+click>=8.1.7
+pydantic>=2.5.0
+pyyaml>=6.0.1
+pathlib>=1.0.1
+psutil>=5.9.0

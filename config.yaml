@@ -1,0 +1,61 @@
+# Codegen Enhanced Configuration File
+# This file allows you to set default values for the CLI tool
+
+# OpenAI Configuration
+model: "gpt-5"              # Primary OpenAI model to use
+fallback_model: "gpt-4"     # Fallback model if primary fails
+timeout: 120                # API timeout in seconds
+
+# Generation Settings  
+max_files: 100              # Maximum files to generate per project
+show_code_preview: true     # Show syntax-highlighted code preview in terminal
+max_preview_lines: 20       # Maximum lines to show in code preview
+parallel_generation: false  # Enable parallel file generation
+max_workers: 3              # Maximum parallel workers
+
+# Performance & Caching
+enable_cache: true          # Enable intelligent response caching
+smart_retry: true           # Enable smart retry with exponential backoff
+
+# Cache Configuration
+cache:
+  enabled: true             # Enable/disable caching
+  ttl_hours: 24            # Cache time-to-live in hours
+  max_size_mb: 100         # Maximum cache size in MB
+  directory: ".codegen_cache"  # Cache directory
+
+# Retry Configuration  
+retry:
+  max_attempts: 3          # Maximum retry attempts
+  base_delay: 1.0          # Base delay in seconds
+  max_delay: 60.0          # Maximum delay in seconds
+  backoff_factor: 2.0      # Exponential backoff factor
+
+# Security Settings
+security:
+  validate_file_paths: true    # Validate file paths for security
+  max_file_size_mb: 10        # Maximum file size in MB
+  allowed_extensions:         # Allowed file extensions
+    - ".py"
+    - ".js" 
+    - ".ts"
+    - ".jsx"
+    - ".tsx"
+    - ".html"
+    - ".css"
+    - ".scss"
+    - ".json"
+    - ".yaml"
+    - ".yml"
+    - ".md"
+    - ".txt"
+    - ".sh"
+    - ".sql"
+
+# Logging
+log_level: "INFO"           # Logging level (DEBUG, INFO, WARNING, ERROR)
+log_file: null              # Optional log file path
+
+# UI Settings
+theme: "monokai"            # Syntax highlighting theme
+show_progress: true         # Show progress bars and status indicators
