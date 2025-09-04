@@ -1,5 +1,5 @@
 # 🚀 Codegen v2.0 - Enhanced AI Code Generator
-
+**author:**Simon-Pierre Boucher
 > **The most robust and legendary AI-powered code generation CLI tool**
 
 [![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/your-repo/codegen)
